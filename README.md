@@ -96,8 +96,15 @@ http://localhost:3001/quotes/quote_1
 
 ## Inclusion and Convenience
 **rulers/lib/rulers/controller.rb**
-```
+```ruby
 require "rulers/file_model"
+
+module Rulers
+  class Controller
+    include Rulers::Model
+  end
+end
+
 ```
 
 ## Queries

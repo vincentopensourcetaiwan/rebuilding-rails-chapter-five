@@ -67,3 +67,22 @@ module Rulers
   end
 end
 ```
+
+## Show the quote
+**best_quotes/app/controllers/quotes_controller.rb**
+```ruby
+def quote_1
+  quote_1 = Rulers::Model::FileModel.find(1)
+  render :quote, :obj => quote_1
+end
+```
+**best_quotes/app/views/quotes/quote.html.erb**
+```html
+<p>
+  &quot;<%= obj["quote"] %>&quot;
+  <br/> &ndash; <%= obj["attribution"] %>
+</p>
+<p>
+  Submitted by <%= obj["submitter"] %>
+</p>
+```

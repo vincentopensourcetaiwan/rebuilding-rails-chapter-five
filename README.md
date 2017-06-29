@@ -19,5 +19,8 @@ git checkout -b chapter_5_mine chapter_5
 gem.add_runtime_dependency "multi_json"
 ```
 
+```
+bundle install
+```
 
 

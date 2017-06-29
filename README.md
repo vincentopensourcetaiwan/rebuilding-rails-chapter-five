@@ -86,3 +86,10 @@ end
   Submitted by <%= obj["submitter"] %>
 </p>
 ```
+
+## The monent of truth
+**best_quotes/**
+```
+bundle exec rackup -p 3001
+```
+http://localhost:3001/quotes/quote_1

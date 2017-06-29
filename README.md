@@ -111,7 +111,7 @@ end
 **best_quotes/app/controllers/quotes_controller.rb**
 ```ruby
 def index
-  quotes = FileModel.all
+  quotes = Rulers::Model::FileModel.all
   render :index, :quotes => quotes
 end
 ```

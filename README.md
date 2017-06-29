@@ -11,4 +11,13 @@ https://github.com/noahgibbs/best_quotes
 git checkout -b chapter_5_mine chapter_5
 ```
 
+## Add “multi_json” dependency 
+
+**rulers/rulers.gemspec** 
+
+```ruby
+gem.add_runtime_dependency "multi_json"
+```
+
+
 

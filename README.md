@@ -150,6 +150,19 @@ TEMPLATE
       end
 
 ```
+**best_quotes/app/controllers/quotes_controller.rb**
+```ruby
+def new_quote
+  attrs = {
+    "submitter" => "web user",
+    "quote" => "A picture is worth one k pixels",
+    "attribution" => "Me"
+  }
+  m = Rulers::Model::FileModel.create attrs
+  render :quote, :obj => m
+end
+```
+
 
 
 

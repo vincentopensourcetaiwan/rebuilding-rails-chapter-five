@@ -108,6 +108,20 @@ def self.all
   files.map { |f| FileModel.new f }
 end
 ```
+**best_quotes/app/controllers/quotes_controller.rb**
+```ruby
+def index
+  quotes = FileModel.all
+  render :index, :quotes => quotes
+end
+```
+**best_quotes/app/views/quotes/index.html.erb**
+```html
+<% quotes.each do |q| %>
+    <p> <%= q["quote"] %> </p>
+<% end %>
+```
+
 
 
 

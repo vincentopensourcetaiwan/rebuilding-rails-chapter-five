@@ -118,7 +118,7 @@ end
 **best_quotes/app/controllers/quotes_controller.rb**
 ```ruby
 def index
-  quotes = Rulers::Model::FileModel.all
+  quotes = FileModel.all
   render :index, :quotes => quotes
 end
 ```
@@ -165,7 +165,7 @@ def new_quote
     "quote" => "A picture is worth one k pixels",
     "attribution" => "Me"
   }
-  m = Rulers::Model::FileModel.create attrs
+  m = FileModel.create attrs
   render :quote, :obj => m
 end
 ```

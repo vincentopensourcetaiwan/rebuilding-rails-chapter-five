@@ -100,5 +100,14 @@ http://localhost:3001/quotes/quote_1
 require "rulers/file_model"
 ```
 
+## Queries
+**rulers/lib/rulers/file_model.rb**
+```ruby
+def self.all
+  files = Dir["db/quotes/*.json"]
+  files.map { |f| FileModel.new f }
+end
+```
+
 
 

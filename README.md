@@ -170,6 +170,19 @@ def new_quote
 end
 ```
 
+## Exercises
+### Edit and Update method
+### Caching and Sharing Models
+### Add new methods
+```ruby
+find_all_by_submitter()
+method_missing()
+```
+
+## Rails
+http://yehudakatz.com/2010/01/10/activemodel-make-any-ruby-object-feel-like-activerecord/
+
+
 
 
 

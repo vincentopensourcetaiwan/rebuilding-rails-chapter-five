@@ -171,9 +171,11 @@ end
 ```
 
 ## Exercises
-### Edit and Update method
-### Caching and Sharing Models
-### Add new methods
+**Edit and Update method**
+
+**Caching and Sharing Models**
+
+**Add new methods**
 ```ruby
 find_all_by_submitter()
 method_missing()

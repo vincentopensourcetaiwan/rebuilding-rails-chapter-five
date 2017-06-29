@@ -93,3 +93,12 @@ end
 bundle exec rackup -p 3001
 ```
 http://localhost:3001/quotes/quote_1
+
+## Inclusion and Convenience
+**rulers/lib/rulers/controller.rb**
+```
+require "rulers/file_model"
+```
+
+
+
